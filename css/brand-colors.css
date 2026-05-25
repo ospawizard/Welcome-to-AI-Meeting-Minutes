@@ -1,0 +1,10 @@
+/* Palette from Chrome Web Store banner (ai-meeting-notes-banner) */
+:root {
+  --brand-purple-deep: #210a7b;
+  --brand-purple-mid: #5c1bd9;
+  --brand-purple-bright: #9221ff;
+  --brand-purple-glow: #c084fc;
+  --brand-yellow: #ffd72e;
+  --brand-yellow-text: #ffd72e;
+  --brand-on-dark: #ffffff;
+}

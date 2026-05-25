@@ -1,12 +1,14 @@
+@import url("brand-colors.css");
+
 :root {
   --brand-bg: #f8f5ff;
   --brand-surface: #ffffff;
-  --brand-primary: #5f2eff;
-  --brand-primary-hover: #4f24e8;
+  --brand-primary: var(--brand-purple-mid);
+  --brand-primary-hover: #4a14b8;
   --brand-text: #17151f;
   --brand-muted: #6f6a82;
   --brand-border: #ddd6f4;
-  --brand-accent: #ffd72e;
+  --brand-accent: var(--brand-yellow);
   --header-bg: #ffffff;
   --shadow: 0 12px 40px rgba(95, 46, 255, 0.08);
 }
@@ -155,6 +157,16 @@ a:hover {
   overflow: hidden;
   background: #f3edff;
   border: 1px solid var(--brand-border);
+}
+
+.step-figure--banner {
+  background: #ffffff;
+  border: 1px solid var(--brand-border);
+  padding: 16px;
+}
+
+.step-figure--banner img {
+  border-radius: 10px;
 }
 
 .step-figure img {
