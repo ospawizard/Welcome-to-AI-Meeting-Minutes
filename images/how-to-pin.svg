@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="480" viewBox="0 0 860 480" role="img" aria-label="How to pin the extension">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f5ff"/>
+      <stop offset="1" stop-color="#ece4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="480" fill="url(#bg)"/>
+  <rect x="40" y="36" width="780" height="56" rx="14" fill="#fff" stroke="#ddd6f4"/>
+  <text x="68" y="72" font-family="system-ui,sans-serif" font-size="18" fill="#6f6a82">Chrome toolbar</text>
+  <rect x="560" y="52" width="220" height="24" rx="12" fill="#f3edff" stroke="#c4b5fd" stroke-dasharray="6 4"/>
+  <text x="575" y="69" font-family="system-ui,sans-serif" font-size="14" fill="#5f2eff">Extensions puzzle icon</text>
+  <rect x="68" y="130" width="724" height="300" rx="18" fill="#fff" stroke="#ddd6f4"/>
+  <text x="96" y="168" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#17151f">Extensions</text>
+  <rect x="96" y="196" width="660" height="64" rx="12" fill="#f8f5ff" stroke="#ebe4ff"/>
+  <rect x="112" y="212" width="32" height="32" rx="8" fill="#5f2eff"/>
+  <text x="156" y="234" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#17151f">AI Meeting Minutes</text>
+  <path d="M690 228l8 8 18-18" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="620" y="208" width="88" height="40" rx="20" fill="#ffd72e"/>
+  <text x="636" y="233" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#7a5a00">Pin</text>
+  <path d="M120 320h620" stroke="#ebe4ff" stroke-width="2"/>
+  <text x="96" y="360" font-family="system-ui,sans-serif" font-size="16" fill="#6f6a82">Click the pin so AI Meeting Minutes stays on the toolbar.</text>
+  <path d="M700 118 L700 196" stroke="#5f2eff" stroke-width="3" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#5f2eff"/>
+    </marker>
+  </defs>
+</svg>
