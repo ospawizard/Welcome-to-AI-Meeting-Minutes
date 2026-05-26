@@ -181,7 +181,7 @@ a:hover {
 }
 
 .step-figure--banner img {
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 .step-figure img {
