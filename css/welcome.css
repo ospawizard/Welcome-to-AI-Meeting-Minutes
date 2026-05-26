@@ -1,0 +1,244 @@
+@import url("brand-colors.css");
+
+:root {
+  /* Page background — matches how-to-pin banner (white + lavender arcs) */
+  --page-bg-base: #ffffff;
+  --page-glow-soft: rgba(227, 215, 253, 0.55);
+  --page-glow-mid: rgba(236, 225, 253, 0.38);
+  --page-glow-fade: rgba(248, 242, 254, 0.22);
+  --brand-bg: var(--page-bg-base);
+  --brand-surface: #ffffff;
+  --brand-primary: var(--brand-purple-mid);
+  --brand-primary-hover: #4a14b8;
+  --brand-text: #17151f;
+  --brand-muted: #6f6a82;
+  --brand-border: #ddd6f4;
+  --brand-accent: var(--brand-yellow);
+  --shadow: 0 12px 40px rgba(95, 46, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background-color: var(--page-bg-base);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--brand-text);
+  background-color: var(--page-bg-base);
+  background-image:
+    url("../images/welcome-page-bg.png?v=no2"),
+    radial-gradient(
+      ellipse 160% 120% at 88% 105%,
+      var(--page-glow-soft) 0%,
+      transparent 58%
+    ),
+    radial-gradient(
+      ellipse 120% 90% at 92% 100%,
+      var(--page-glow-mid) 0%,
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse 90% 70% at 95% 98%,
+      var(--page-glow-fade) 0%,
+      transparent 48%
+    ),
+    radial-gradient(
+      circle at 92% 98%,
+      transparent 22%,
+      rgba(225, 212, 252, 0.12) 23%,
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 98%,
+      transparent 34%,
+      rgba(228, 216, 252, 0.09) 35%,
+      transparent 37%
+    ),
+    radial-gradient(
+      circle at 92% 98%,
+      transparent 46%,
+      rgba(230, 219, 253, 0.07) 47%,
+      transparent 49%
+    );
+  background-repeat: no-repeat;
+  background-position: center bottom, center bottom, center bottom, center bottom,
+    center bottom, center bottom, center bottom;
+  background-size: 100% max(42vh, 420px), auto, auto, auto, auto, auto, auto;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Banners render at native 1024px width for maximum sharpness */
+.container--steps {
+  max-width: 1072px;
+}
+
+.hero {
+  padding: 48px 0 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  margin: 0 auto;
+  max-width: 640px;
+  color: var(--brand-muted);
+  font-size: 1.05rem;
+}
+
+.steps {
+  padding: 24px 0 72px;
+  display: grid;
+  gap: 40px;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--brand-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 28px 28px 24px;
+  backdrop-filter: blur(4px);
+}
+
+.step-number {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.step-title {
+  margin: 0 0 18px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.step--banner {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.step-heading {
+  margin-bottom: 18px;
+}
+
+.step-heading .step-number {
+  margin-bottom: 8px;
+}
+
+.step-heading .step-title {
+  margin-bottom: 0;
+}
+
+.step-heading .step-title:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.step-heading .step-number:not(:first-of-type) {
+  margin-top: 4px;
+}
+
+.step-figure {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--brand-border);
+}
+
+.step-figure--banner {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--brand-border);
+  padding: 16px;
+}
+
+.step-figure--banner img {
+  border-radius: 0;
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+  image-rendering: auto;
+}
+
+.step-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.step-help {
+  margin-top: 14px;
+}
+
+.step-help summary {
+  cursor: pointer;
+  color: var(--brand-primary);
+  font-weight: 600;
+  list-style: none;
+}
+
+.step-help summary::-webkit-details-marker {
+  display: none;
+}
+
+.step-help summary::after {
+  content: " ›";
+}
+
+.step-help[open] summary::after {
+  content: "";
+}
+
+.step-help p {
+  margin: 10px 0 0;
+  color: var(--brand-muted);
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  background: rgba(255, 255, 255, 0.75);
+  border-top: 1px solid var(--brand-border);
+  padding: 24px 0 40px;
+  text-align: center;
+  color: var(--brand-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .step {
+    padding: 20px 18px 18px;
+  }
+}
