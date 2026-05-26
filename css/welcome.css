@@ -14,7 +14,6 @@
   --brand-muted: #6f6a82;
   --brand-border: #ddd6f4;
   --brand-accent: var(--brand-yellow);
-  --header-bg: #ffffff;
   --shadow: 0 12px 40px rgba(95, 46, 255, 0.08);
 }
 
@@ -91,71 +90,8 @@ a:hover {
   padding: 0 24px;
 }
 
-.site-header {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--brand-border);
-}
-
-.site-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  min-height: 72px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--brand-text);
-  text-decoration: none;
-}
-
-.brand:hover {
-  text-decoration: none;
-}
-
-.brand img {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 0.95rem;
-}
-
-.site-nav a {
-  color: var(--brand-muted);
-}
-
-.btn-install {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 18px;
-  border-radius: 999px;
-  background: var(--brand-primary);
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.btn-install:hover {
-  background: var(--brand-primary-hover);
-  text-decoration: none;
-}
-
 .hero {
-  padding: 56px 0 24px;
+  padding: 48px 0 24px;
   text-align: center;
 }
 
@@ -285,17 +221,6 @@ a:hover {
 }
 
 @media (max-width: 640px) {
-  .site-header .container {
-    flex-wrap: wrap;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  .site-nav {
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .step {
     padding: 20px 18px 18px;
   }
