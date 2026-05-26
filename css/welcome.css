@@ -37,43 +37,42 @@ body {
   background-image:
     url("../images/welcome-page-bg.png"),
     radial-gradient(
-      ellipse 130% 95% at 100% 100%,
+      ellipse 160% 120% at 88% 105%,
       var(--page-glow-soft) 0%,
+      transparent 58%
+    ),
+    radial-gradient(
+      ellipse 120% 90% at 92% 100%,
+      var(--page-glow-mid) 0%,
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse 90% 70% at 95% 98%,
+      var(--page-glow-fade) 0%,
       transparent 48%
     ),
     radial-gradient(
-      ellipse 95% 72% at 98% 96%,
-      var(--page-glow-mid) 0%,
-      transparent 44%
+      circle at 92% 98%,
+      transparent 22%,
+      rgba(225, 212, 252, 0.12) 23%,
+      transparent 25%
     ),
     radial-gradient(
-      ellipse 68% 52% at 96% 92%,
-      var(--page-glow-fade) 0%,
-      transparent 40%
+      circle at 92% 98%,
+      transparent 34%,
+      rgba(228, 216, 252, 0.09) 35%,
+      transparent 37%
     ),
     radial-gradient(
-      circle at 100% 100%,
-      transparent 26%,
-      rgba(225, 212, 252, 0.14) 27%,
-      transparent 29%
-    ),
-    radial-gradient(
-      circle at 100% 100%,
-      transparent 36%,
-      rgba(228, 216, 252, 0.11) 37%,
-      transparent 39%
-    ),
-    radial-gradient(
-      circle at 100% 100%,
+      circle at 92% 98%,
       transparent 46%,
-      rgba(230, 219, 253, 0.09) 47%,
+      rgba(230, 219, 253, 0.07) 47%,
       transparent 49%
     );
   background-repeat: no-repeat;
-  background-position: right bottom, right bottom, right bottom, right bottom,
-    right bottom, right bottom, right bottom;
-  background-size: min(72vw, 680px) auto, auto, auto, auto, auto, auto, auto;
-  background-attachment: fixed;
+  background-position: center bottom, center bottom, center bottom, center bottom,
+    center bottom, center bottom, center bottom;
+  background-size: 100% max(42vh, 420px), auto, auto, auto, auto, auto, auto;
   line-height: 1.5;
 }
 
