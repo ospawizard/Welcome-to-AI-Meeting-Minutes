@@ -34,7 +34,7 @@ body {
   color: var(--brand-text);
   background-color: var(--page-bg-base);
   background-image:
-    url("../images/welcome-page-bg.png"),
+    url("../images/welcome-page-bg.png?v=no2"),
     radial-gradient(
       ellipse 160% 120% at 88% 105%,
       var(--page-glow-soft) 0%,
@@ -88,6 +88,11 @@ a:hover {
   max-width: 920px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+/* Banners render at native 1024px width for maximum sharpness */
+.container--steps {
+  max-width: 1072px;
 }
 
 .hero {
@@ -182,6 +187,10 @@ a:hover {
 
 .step-figure--banner img {
   border-radius: 0;
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+  image-rendering: auto;
 }
 
 .step-figure img {
