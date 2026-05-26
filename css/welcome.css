@@ -34,7 +34,6 @@ body {
   color: var(--brand-text);
   background-color: var(--page-bg-base);
   background-image:
-    url("../images/welcome-page-bg.png?v=no2"),
     radial-gradient(
       ellipse 160% 120% at 88% 105%,
       var(--page-glow-soft) 0%,
@@ -70,8 +69,8 @@ body {
     );
   background-repeat: no-repeat;
   background-position: center bottom, center bottom, center bottom, center bottom,
-    center bottom, center bottom, center bottom;
-  background-size: 100% max(42vh, 420px), auto, auto, auto, auto, auto, auto;
+    center bottom, center bottom;
+  background-size: auto, auto, auto, auto, auto, auto;
   line-height: 1.5;
 }
 
@@ -179,13 +178,16 @@ a:hover {
   border: 1px solid var(--brand-border);
 }
 
-.step-figure--banner {
+.step-figure.step-figure--banner {
   background: transparent;
   border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
   padding: 0;
 }
 
-.step-figure--banner img {
+.step-figure.step-figure--banner img {
   border-radius: 0;
   width: 100%;
   max-width: 1024px;
