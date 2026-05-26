@@ -1,3 +1,8 @@
 .DS_Store
 Thumbs.db
 *.log
+node_modules/
+images/_*.png
+images/arrows*.png
+images/brand-banner-reference.png
+images/icon64.png
