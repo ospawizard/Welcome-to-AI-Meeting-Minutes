@@ -162,7 +162,7 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.step-heading .step-number ~ .step-number {
+.step-heading .step-number:not(:first-of-type) {
   margin-top: 4px;
 }
 
