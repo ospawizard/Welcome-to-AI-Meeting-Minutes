@@ -1,7 +1,12 @@
 @import url("brand-colors.css");
 
 :root {
-  --brand-bg: #f8f5ff;
+  /* Page background — matches how-to-pin banner (white + lavender arcs) */
+  --page-bg-base: #ffffff;
+  --page-glow-soft: rgba(227, 215, 253, 0.55);
+  --page-glow-mid: rgba(236, 225, 253, 0.38);
+  --page-glow-fade: rgba(248, 242, 254, 0.22);
+  --brand-bg: var(--page-bg-base);
   --brand-surface: #ffffff;
   --brand-primary: var(--brand-purple-mid);
   --brand-primary-hover: #4a14b8;
@@ -17,13 +22,58 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  min-height: 100%;
+  background-color: var(--page-bg-base);
+}
+
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color: var(--brand-text);
-  background: var(--brand-bg);
+  background-color: var(--page-bg-base);
+  background-image:
+    url("../images/welcome-page-bg.png"),
+    radial-gradient(
+      ellipse 130% 95% at 100% 100%,
+      var(--page-glow-soft) 0%,
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse 95% 72% at 98% 96%,
+      var(--page-glow-mid) 0%,
+      transparent 44%
+    ),
+    radial-gradient(
+      ellipse 68% 52% at 96% 92%,
+      var(--page-glow-fade) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      transparent 26%,
+      rgba(225, 212, 252, 0.14) 27%,
+      transparent 29%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      transparent 36%,
+      rgba(228, 216, 252, 0.11) 37%,
+      transparent 39%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      transparent 46%,
+      rgba(230, 219, 253, 0.09) 47%,
+      transparent 49%
+    );
+  background-repeat: no-repeat;
+  background-position: right bottom, right bottom, right bottom, right bottom,
+    right bottom, right bottom, right bottom;
+  background-size: min(72vw, 680px) auto, auto, auto, auto, auto, auto, auto;
+  background-attachment: fixed;
   line-height: 1.5;
 }
 
@@ -43,7 +93,8 @@ a:hover {
 }
 
 .site-header {
-  background: var(--header-bg);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--brand-border);
 }
 
@@ -131,11 +182,12 @@ a:hover {
 }
 
 .step {
-  background: var(--brand-surface);
+  background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--brand-border);
   border-radius: 20px;
   box-shadow: var(--shadow);
   padding: 28px 28px 24px;
+  backdrop-filter: blur(4px);
 }
 
 .step-number {
@@ -151,16 +203,36 @@ a:hover {
   font-weight: 700;
 }
 
+.step--banner {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.step--banner .step-heading {
+  margin-bottom: 18px;
+}
+
+.step--banner .step-number {
+  margin-bottom: 8px;
+}
+
+.step--banner .step-title {
+  margin-bottom: 0;
+}
+
 .step-figure {
   margin: 0;
   border-radius: 14px;
   overflow: hidden;
-  background: #f3edff;
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--brand-border);
 }
 
 .step-figure--banner {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--brand-border);
   padding: 16px;
 }
@@ -205,6 +277,7 @@ a:hover {
 }
 
 .site-footer {
+  background: rgba(255, 255, 255, 0.75);
   border-top: 1px solid var(--brand-border);
   padding: 24px 0 40px;
   text-align: center;
