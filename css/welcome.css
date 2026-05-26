@@ -146,23 +146,23 @@ a:hover {
   padding: 0;
 }
 
-.step--banner .step-heading {
+.step-heading {
   margin-bottom: 18px;
 }
 
-.step--banner .step-number {
+.step-heading .step-number {
   margin-bottom: 8px;
 }
 
-.step--banner .step-heading .step-title {
+.step-heading .step-title {
   margin-bottom: 0;
 }
 
-.step--banner .step-heading .step-title:first-of-type {
+.step-heading .step-title:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
-.step--banner .step-heading .step-number:nth-of-type(2) {
+.step-heading .step-number ~ .step-number {
   margin-top: 4px;
 }
 
