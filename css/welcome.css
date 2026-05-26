@@ -183,15 +183,17 @@ a:hover {
   border: none;
   border-radius: 0;
   box-shadow: none;
-  overflow: visible;
+  overflow: hidden;
   padding: 0;
+  width: 100%;
 }
 
 .step-figure.step-figure--banner img {
   border-radius: 0;
+  display: block;
   width: 100%;
-  max-width: 1024px;
-  margin-inline: auto;
+  max-width: none;
+  margin: 0;
   image-rendering: auto;
 }
 
